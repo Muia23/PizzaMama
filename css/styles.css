@@ -8,3 +8,14 @@
   left: 0;
   min-height: 300px;
 }
+
+/*Pizza Cards*/
+.card-deck{
+  padding: 30px 0 30px 0;
+}
+.card-body {
+  float: right;
+}
+.card-img-top2{
+  min-height: 10px;
+}
