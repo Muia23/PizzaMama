@@ -88,3 +88,48 @@ const mexicanchoice  = document.getElementById('mexicanTotal');
     }
   }
 }
+
+//Crust Supreme total
+var mexicanSum = 0;
+sumsupreme();
+
+function sumsupreme(){
+const addsupreme = document.getElementsByClassName('supremechoice');
+const supremechoice  = document.getElementById('supremeTotal');
+ for (var i=0; i < addsupreme.length; i++) {
+    addsupreme[i].onchange = function() {
+        var add = this.value * (this.checked ? 1 : -1);
+    return supremeSum = supremechoice.innerHTML = parseFloat(supremechoice.innerHTML) + add;
+    }
+  }
+}
+
+//Meat Deluxe total
+var deluxeSum = 0;
+sumdeluxe();
+
+function sumdeluxe(){
+const adddeluxe = document.getElementsByClassName('deluxechoice');
+const deluxechoice  = document.getElementById('deluxeTotal');
+ for (var i=0; i < adddeluxe.length; i++) {
+    adddeluxe[i].onchange = function() {
+        var add = this.value * (this.checked ? 1 : -1);
+    return deluxeSum = deluxechoice.innerHTML = parseFloat(deluxechoice.innerHTML) + add;
+    }
+  }
+}
+
+//Pepperoni total
+var pepperoniSum = 0;
+sumpepperoni();
+
+function sumpepperoni(){
+const addpepperoni = document.getElementsByClassName('pepperonichoice');
+const pepperonichoice  = document.getElementById('pepperoniTotal');
+ for (var i=0; i < addpepperoni.length; i++) {
+    addpepperoni[i].onchange = function() {
+        var add = this.value * (this.checked ? 1 : -1);
+    return pepperoniSum = pepperonichoice.innerHTML = parseFloat(pepperonichoice.innerHTML) + add;
+    }
+  }
+}
