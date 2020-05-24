@@ -11,16 +11,18 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 10000); 
 }
-var totalSum = 0
+
+//Periperi total
+var periperiSum = 0
 window.onload=function sumtopping(){
-const addchoice = document.getElementsByClassName('choice');
-const totalchoice  = document.getElementById('choiceTotal');
+const addchoice = document.getElementsByClassName('periperichoice ');
+const periperichoice  = document.getElementById('periperiTotal');
  for (var i=0; i < addchoice.length; i++) {
     addchoice[i].onchange = function() {
         var add = this.value * (this.checked ? 1 : -1);
-    return totalSum = totalchoice.innerHTML = parseFloat(totalchoice.innerHTML) + add;
+    return periperiSum = periperichoice.innerHTML = parseFloat(periperichoice.innerHTML) + add;
     }
   }
 }
