@@ -43,3 +43,48 @@ const bbqchoice  = document.getElementById('bbqTotal');
     }
   }
 }
+
+//Margherita total
+var margheritaSum = 0;
+summargherita();
+
+function summargherita(){
+const addmargherita = document.getElementsByClassName('margheritachoice');
+const margheritachoice  = document.getElementById('margheritaTotal');
+ for (var i=0; i < addmargherita.length; i++) {
+    addmargherita[i].onchange = function() {
+        var add = this.value * (this.checked ? 1 : -1);
+    return margheritaSum = margheritachoice.innerHTML = parseFloat(margheritachoice.innerHTML) + add;
+    }
+  }
+}
+
+//Hawaiian total
+var hawaiianSum = 0;
+sumhawaiian();
+
+function sumhawaiian(){
+const addhawaiian = document.getElementsByClassName('hawaiianchoice');
+const hawaiianchoice  = document.getElementById('hawaiianTotal');
+ for (var i=0; i < addhawaiian.length; i++) {
+    addhawaiian[i].onchange = function() {
+        var add = this.value * (this.checked ? 1 : -1);
+    return hawaiianSum = hawaiianchoice.innerHTML = parseFloat(hawaiianchoice.innerHTML) + add;
+    }
+  }
+}
+
+//Mexican total
+var mexicanSum = 0;
+summexican();
+
+function summexican(){
+const addmexican = document.getElementsByClassName('mexicanchoice');
+const mexicanchoice  = document.getElementById('mexicanTotal');
+ for (var i=0; i < addmexican.length; i++) {
+    addmexican[i].onchange = function() {
+        var add = this.value * (this.checked ? 1 : -1);
+    return mexicanSum = mexicanchoice.innerHTML = parseFloat(mexicanchoice.innerHTML) + add;
+    }
+  }
+}
