@@ -11,18 +11,35 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 10000); 
+  setTimeout(showSlides, 2000);
 }
 
 //Periperi total
-var periperiSum = 0
-window.onload=function sumtopping(){
-const addchoice = document.getElementsByClassName('periperichoice ');
+var periperiSum = 0;
+sumperiperi();
+
+function sumperiperi(){
+const addperiperi = document.getElementsByClassName('periperichoice ');
 const periperichoice  = document.getElementById('periperiTotal');
- for (var i=0; i < addchoice.length; i++) {
-    addchoice[i].onchange = function() {
+ for (var i=0; i < addperiperi.length; i++) {
+    addperiperi[i].onchange = function() {
         var add = this.value * (this.checked ? 1 : -1);
     return periperiSum = periperichoice.innerHTML = parseFloat(periperichoice.innerHTML) + add;
+    }
+  }
+}
+
+//BBQ Chicken total
+var bbqSum = 0;
+sumbbq();
+
+function sumbbq(){
+const addbbq = document.getElementsByClassName('bbqchoice');
+const bbqchoice  = document.getElementById('bbqTotal');
+ for (var i=0; i < addbbq.length; i++) {
+    addbbq[i].onchange = function() {
+        var add = this.value * (this.checked ? 1 : -1);
+    return bbqSum = bbqchoice.innerHTML = parseFloat(bbqchoice.innerHTML) + add;
     }
   }
 }
