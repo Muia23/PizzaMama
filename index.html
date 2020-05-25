@@ -7,14 +7,11 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar">
       <div class="container-fluid">
         <div class="navbar-header">
           <a href="/" title="Pizza"><img class="logo" src="images/logo.png" alt="Pizza"></a>
         </div>
-   	    <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-       	</ul>
       </div>
     </nav>
 
@@ -946,7 +943,7 @@
             <div class="product__photo">
             <div class="photo-container">
               <div class="photo-main">
-                <img class="shop-item-image" src="images/meatdeluxe.png" alt="pizza" style="max-width:400px;">
+                <img class="shop-item-image" src="https://d2mekbzx20fc11.cloudfront.net/uploads/web.Pepperoni_600x600.png" alt="pizza" style="max-width:400px;">
               </div>
             </div>
           </div>
@@ -1074,8 +1071,13 @@
       <div class="row">
         <div class="col">
           <h3> DELIVER SERVICES</h3>
-          <p>We offer Delivery Services to our esteemed customers within Nairobi. Would you like to our service<p>
-            <input type="checkbox" id="delivery" value="100">
+          <p>We offer Delivery Services to our esteemed customers within Nairobi. Would you like our service<p>
+          <ul>
+            <li>
+              <input type="checkbox" id="delivery" class="styled">
+              <label class="styled" for="delivery">Delivery</label>
+            </li>
+          </ul
         </div>
         <div class="col">
           <h2 class="section-header">CART</h2>
@@ -1093,11 +1095,6 @@
         </div>
       </div>
     </section>
-
-
-    order location
-
-    checkout
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/scripts.js"></script>
   </body>
