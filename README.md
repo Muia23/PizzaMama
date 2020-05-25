@@ -10,7 +10,7 @@ It also allows the user to make use of the delivery services, entering a deliver
 ## Project setup instruction
 The index HTML file can be open on a local browser and the page will certainly open.
 
-Here is a link to the live site().
+Here is a link to the live site(https://muia23.github.io/PizzaMama/).
 
 ## BBD
 With the aim of making user input as minimal as possible, Here are the functions the user will do:
